@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'minitest-rails'
+group :test do
+  gem 'minitest-reporters'
+  gem 'minitest-rails-capybara'
+end
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
