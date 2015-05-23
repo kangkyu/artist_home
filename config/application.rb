@@ -25,6 +25,7 @@ module ArtistHome
     
     config.generators do |g|
       g.test_framework :minitest, spec: false, fixture: true
+      g.assets false
     end
   end
 end
