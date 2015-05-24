@@ -3,10 +3,18 @@ body
   background: image-url("christmas-2012.jpg") no-repeat fixed center
   background-size: cover
 
-  /*font-family: Georgia, serif*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
   /*font-family: "Times New Roman", Times, serif*/
-  text-align: center
+  /*font-family: Georgia, serif*/
+
+.v-h-center
+  margin: auto
+
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
 
 #logo
   background: #B01302 image-url("lang-logo-402.png")
@@ -14,8 +22,7 @@ body
   height: 100px
   width: 100px
   border-radius: 50%
-  border: 2px solid white
-  margin: auto
+  border: 2px solid #fff
 
   display: block
   vertical-align: middle
@@ -24,20 +31,29 @@ img
 
 h1
   color: white
+  text-align: center
 
 a
+  text-align: center
   text-decoration: inherit
   font-style: inherit
-  color: inherit
 
-// :link, :hover, :active and :visited = pseudo-elements
+a.custom-link
+  color: #fff
+  background-color: transparent
+  padding: 15px 30px
+  font-size: 20px
 
-a:link, a:visited
-  border: none
-  text-decoration: underline
-  font-style: normal
-  color: black
+  height: 20px
+  width: 160px
+  border-radius: 6px
+  border: 2px solid #fff
 
-a:hover
-  text-decoration: none
-  color: #a3211f
+  display: block
+  vertical-align: middle
+
+  &:hover
+    color: inherit
+    background-color: #fff
+    border-width: 0
+    font-weight: 900
