@@ -1,3 +1,15 @@
 %h1 All Artworks
 = link_to root_path do
   #logo.v-h-center
+
+.artwork-thumbs
+  - @artworks.each do |artwork|
+    .thumbnail
+      %h3= artwork.name
+      %p
+        - artwork.attributes.each do |k,v|
+          = "#{k} = #{v}"
+          %br
+      %p
+        = link_to "Button", '#', class: "btn btn-primary", role: "button"
+        = link_to "Button", '#', class: "btn btn-default", role: "button"

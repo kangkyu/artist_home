@@ -1,0 +1,31 @@
+.thumbnail
+  border: 2px solid #000000
+  background-color: #ffffff
+  display: inline-block
+  width: 100%
+  padding: 20px
+
+
+
+
+
+
+.artwork-thumbs
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+
+
+@media only screen and (max-width: 768px)
+  .artwork-thumbs
+    -webkit-column-count: 2
+    -moz-column-count: 2
+    column-count: 2
+
+
+@media only screen and (max-width: 480px)
+  .artwork-thumbs
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1
+
