@@ -18,7 +18,7 @@ group :test do
 end
 
 gem 'aws-sdk', '~> 2.1.2'
-
+gem "paperclip", "~> 4.3"
 
 
 
