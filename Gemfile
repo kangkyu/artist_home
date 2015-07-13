@@ -17,6 +17,9 @@ group :test do
   gem 'minitest-rails-capybara'
 end
 
+gem 'aws-sdk', '~> 2.1.2'
+
+
 
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
