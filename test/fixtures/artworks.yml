@@ -7,8 +7,8 @@
 one:
   name: "flower"
   picture: "flower.jpeg"
-  description: ""
+  description: "oil on canvas"
 two:
   name: "mountain"
   picture: "mountain.jpg"
-  description: ""
+  description: "awarded at national painting contest in 1980"

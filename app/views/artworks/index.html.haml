@@ -7,9 +7,9 @@
     .thumbnail
       %h3= artwork.name
       %p
-        - artwork.attributes.each do |k,v|
-          = "#{k} = #{v}"
+        - artwork.attributes.values_at('picture', 'description').each do |v|
+          = v
           %br
-      %p
-        = link_to "Button", '#', class: "btn btn-primary", role: "button"
-        = link_to "Button", '#', class: "btn btn-default", role: "button"
+      %p.text-center
+        = link_to "Edit", edit_artwork_path(artwork), class: "btn btn-primary", role: "button"
+        = link_to "Show", artwork, class: "btn btn-default", role: "button"
